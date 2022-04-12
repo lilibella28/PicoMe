@@ -1,20 +1,10 @@
-.brand-logo {
-  margin-left: 15px;
+
+body{
+
+padding: 20px;
 }
 
-.card .card-content .card-title {
-  margin-bottom: 10px;
-}
+header{
 
-#search-row form {
-  padding-top: 20px;
-}
-
-.student-name {
-  position: relative;
-  top: -5px;
-}
-
-.collection-item form {
-  margin-top: -5px;
+  height: 300px;
 }

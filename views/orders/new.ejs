@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+          <div class="right-align">
+          <a href="#" class="btn">Logout</a>
+          <a href="/orders" class="btn">Home</a>
+          <a href="/orders/new" class="btn">Shopping cart</a>
+    
+        </div>
+        <h1>Pico</h1>
+    </header>
+
+  
+<section class=" container row">
+<div class=" container col s4">
+
+    <form action="/orders" method="POST">
+     <h3>Delivery details</h3>
+     <div class="input-field">
+     <input type="text" name="address">
+     <label for="street"> Street</label>
+    </div>
+    <div class="input-field"> 
+     <input type="text" name="city">
+     <label for="city">City</label>
+    </div>
+
+    <div class="input-field">
+        <input type="text" name="state">
+        <label for="state">State</label>
+    </div>
+    <div class="input-field">
+     <input type="text" name="zipCode">
+     <label for="zipcode">Zipcode</label>
+    </div>
+  
+
+  
+</div>
+
+<div class=" col s4">
+    <h6>Special Request/Note</h6>
+<textarea  cols="30" rows="10"  name="message"></textarea>
+</div>
+
+<div class=" col s4">
+    <h3>items</h3>
+      
+
+
+  
+   
+    <input type="submit" class="btn" >
+    <a href="/groceries/new" class="btn">Add More</a>
+</div>
+</form>
+</div>
+
+</section>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
