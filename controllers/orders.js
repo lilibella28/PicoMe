@@ -1,5 +1,5 @@
 const Order = require('../models/orders');
-const Item = require('../models/groceryItems');
+
 
 function index(req, res) {
 	console.log(req.body);
@@ -12,18 +12,14 @@ function index(req, res) {
 }
 
 function show(req, res) {
-	Order.findById(req.params.id)
-		.populate('userGrocery')
-		.exec(function (err, order) {
-			Item.find({ _id: { $nin: order.userGrocery } }, function (err, groceries) {
-				console.log(groceries);
-				res.render('orders/show', {
-					title: 'Welcome to Pico',
-					order: order,
-					groceries: groceries,
-				});
-			});
+	Order.findById(req.params.id, function(err,order ){
+		res.render('orders/show', {
+			title: 'Welcome to Pico',
+			order: order,
+			// groceries: groceries,
 		});
+	})
+	
 }
 
 function newAdd(req, res) {

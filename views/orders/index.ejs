@@ -1,22 +1,19 @@
 <%- include('../partials/header') %>
-<table id="list">
-  <thead>
-    <tr>
-      <th>userName</th>
-      <th>City</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% orders.forEach(function(m) { %>
-      <tr>
-        <td><%= m.userName %></td>
-        <td><%= m.city %></td>
-        <td><%= m.message %> </td>
-        <td><a href="/orders/<%= m._id %>">DETAILS</a></td>
-      </tr>
-      <% }); %>
-    </tbody>
-  </table>
+
+
+
+  <section>
+     <div class="container">
+      <% orders.forEach(function(m) { %>
+        <h4> Hi someone from <%= m.city %> send a request  </h4>
+        <p>"<%= m.message %>" </p>
+        <a href="/orders/<%= m._id %>" class="btn">DETAILS</a>
+
+
+        <% }); %>
+
+     </div>
+
+  </section>
   
 <%- include('../partials/footer') %>

@@ -1,18 +1,18 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+// const mongoose = require("mongoose");
+// const Schema = mongoose.Schema;
 
-//create models for the orders
+// //create models for the orders
 
-const grocerySchema = new Schema({
-     itemName: String, 
-     itemNumber: Number,
-}, 
-{
-     timestamps: true
-}
+// const grocerySchema = new Schema({
+//      itemName: String, 
+//      itemNumber: Number,
+// }, 
+// {
+//      timestamps: true
+// }
 
-)
+// )
 
 
 
-module.exports = mongoose.model("Item", grocerySchema)
+// module.exports = mongoose.model("Item", grocerySchema)

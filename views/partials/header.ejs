@@ -12,9 +12,8 @@
 
     <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="btn">Help center</a>
     <% if (user) { %>
-      <a href="/groceries/new"	<%- title === 'Add Item' ? 'class="active"' : '' %> class="btn">
-      ADD More</a>
-      <a href="/orders/new" <%- title === 'Add Movie' ? 'class="active"' : '' %> class="btn">Shopping cart</a>
+   
+      <a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="btn">New Order</a>
       <a href="/logout" class="btn">LOG OUT</a>
     <% } else { %>
       <a href="/auth/google" class="btn" >LOG IN&nbsp;</a>

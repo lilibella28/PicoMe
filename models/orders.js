@@ -17,7 +17,7 @@ const orderSchema = new Schema({
      state: String,
      zipCode: Number,
      items: Array,
-     userGrocery: [{type: Schema.Types.ObjectId, ref: "Item"}],
+    //  userGrocery: [{type: Schema.Types.ObjectId, ref: "Item"}],
     
      
 },
