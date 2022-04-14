@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <title>Main Page</title>
-</head>
-<body>
-    
-    <header>
-    
-        <div class="right-align">
-      
-          <a href="#" class="btn">Logout</a>
-          <a href="/orders" class="btn">Home</a>
-          <a href="/orders/new" class="btn">Shopping cart</a>
-        </div>
-     <h1>Pico</h1>
-    </header>
+<%- include('../partials/header') %>
 
    <form action="/groceries"  method="POST" class="container row">
     <h4>Hi, Lili Montano</h4>
 
-     <h4>Order details</h4>
+     <h4>Order Here</h4>
      <div class="input-field col s5">
      <input type="text" name="itemName">
      <label for="itemName"> Item name:</label>
@@ -64,6 +42,4 @@
       </table>
 
    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-</html>
+      <%- include('../partials/footer') %>

@@ -3,7 +3,7 @@ const Item = require("../models/groceryItems")
 module.exports = {
   new: newGrocery,
   create,
-  addGrocery,
+ addGrocery,
 };
 
 function create(req, res) {
@@ -16,7 +16,7 @@ function create(req, res) {
 function newGrocery(req, res){
   Item.find({}, function(err, groceryItems){
     res.render('./groceries/new', {
-     
+      title: 'Add Item',
       groceryItems
     })
   })
@@ -33,3 +33,6 @@ function newGrocery(req, res){
       })
     })
  }
+
+
+

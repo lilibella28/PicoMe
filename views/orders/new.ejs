@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Document</title>
-</head>
-<body>
-
-    <header>
-          <div class="right-align">
-          <a href="#" class="btn">Logout</a>
-          <a href="/orders" class="btn">Home</a>
-          <a href="/orders/new" class="btn">Shopping cart</a>
-    
-        </div>
-        <h1>Pico</h1>
-    </header>
+<%- include('../partials/header') %>
 
   
 <section class=" container row">
@@ -54,11 +34,6 @@
 </div>
 
 <div class=" col s4">
-    <h3>items</h3>
-      
-
-
-  
    
     <input type="submit" class="btn" >
     <a href="/groceries/new" class="btn">Add More</a>
@@ -69,8 +44,4 @@
 </section>
 
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-</html>
+<%- include('../partials/footer') %>

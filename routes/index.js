@@ -21,7 +21,7 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect : '/groceries/new', // where do you want the client to go after you login 
+    successRedirect : '/orders', // where do you want the client to go after you login 
     failureRedirect : '/' // where do you want the client to go if login fails
   }
 ));

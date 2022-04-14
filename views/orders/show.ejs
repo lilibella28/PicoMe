@@ -1,0 +1,81 @@
+<%- include('../partials/header') %>
+
+
+
+<section id="show-page">
+    <div> User name: 
+      <%= order.username %>
+    </div>
+    <div>
+        State:
+      <%= order.state %>
+    </div>
+    <div>
+        City:
+      <%= order.city %>
+    </div>
+  
+    <div>
+        Message:
+        <%= order.message %> </div>
+  
+    <div>
+        Zip Code
+        <%= order.zipCode %> </div>
+ 
+
+    <div> Items:</div>
+      
+        <% if(order.items.length) { %>
+          <table id="list" class="container">
+            <thead>
+              <tr>
+                <th> item Name</th>
+                <th>Amount</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% order.items.forEach(function(m) { %>
+                <tr>
+                  <td><%= m.itemName %></td>
+                  <td><%= m.itemNumber %></td>
+
+                  <td>
+                    <% if (user && user._id.equals(m.user)) { %>
+                      <form action="/newItem/<%= m._id %>?_method=DELETE" method="POST">
+                        <button type="submit">X</button>
+                      </form>
+                    <% } %>
+                  </td>
+                </tr>
+                <% }); %>
+              </tbody>
+            </table>
+        <% } else { %>
+        <h3>Please enter a New item</h3>
+        <% } %>
+
+  <section class="container">
+   
+    <% if (user) { %>
+      <h1>Hi, <%= user.name %>  </h1>
+    <form method="POST" action="/orders/<%=order._id%>/newItem">
+      <label>Item Name:</label>
+      <input type="text" name="itemName">
+      <label>Amount:</label>
+      <select name="itemNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <input type="submit" value="Add" class="btn">
+  
+      <% } else { %>
+        <p>Are you reading to help?</p>
+        <a href="#" class="btn"> Accept Request </a>
+        <% } %>
+
+<%- include('../partials/footer') %>

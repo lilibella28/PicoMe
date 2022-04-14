@@ -6,7 +6,12 @@ const Schema = mongoose.Schema;
 const grocerySchema = new Schema({
      itemName: String, 
      itemNumber: Number,
-})
+}, 
+{
+     timestamps: true
+}
+
+)
 
 
 
