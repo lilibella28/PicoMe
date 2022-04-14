@@ -9,17 +9,19 @@ module.exports = {
 
 function create(req, res){
     Order.findById(req.params.id, function(err, orderDatabase){
-        req.body.username = req.user.name
+        req.body.user = req.user._id;
+        req.body.userName = req.user.name;
+        req.body.userAvatar = req.user.avatar
         orderDatabase.items.push(req.body);
         orderDatabase.save(function(err){
-            console.log(orderDatabase);
+            console.log(orderDatabase, "testin data order");
             res.redirect(`/orders/${orderDatabase._id}`)
         })
     })
 }
 
 
-function deleteItem(){
+function deleteItem(req, res){
 
     Order.findOne({"orders._id": req.params.id}), function(err, orderDocument){
         const order = orderDocument.reviews.id(req.params.id);

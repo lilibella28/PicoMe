@@ -32,7 +32,7 @@ function create(req, res) {
 		console.log(err, ' this err order');
 		if (err) return res.redirect('/orders/new');
 		console.log(order, '<= this a order');
-		res.redirect('orders/');
+		res.redirect(`orders/${order._id}`);
 	});
 }
 
