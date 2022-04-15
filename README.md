@@ -30,7 +30,7 @@
 
 
 ## Screenshot
-    <img src="/images/Home.png">
+    <img src="public/images/Home.png">
 
 
 ## Updates
