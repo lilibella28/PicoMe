@@ -12,8 +12,9 @@
         </div>
         
     <div>
-        City:
-      <%= order.city %>
+       Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Vitae, alias odit incidunt delectus
+         perspiciatis totam dolorum. Qui, asperiores fuga. Dolorum, officiis iste? Dolorem, cum corporis. Omnis quo ab sint neque.
     </div>
     <div>
       State:
@@ -86,7 +87,8 @@
                   <td>
                     <% if (user && user._id.equals(m.user)) { %>
                       <form action="/newItem/<%= m._id %>?_method=DELETE" method="POST">
-                        <button type="submit"><i class="material-icons">delete</i></button>
+                        <button type="submit" class="deleteBtn red-text"><i class="material-icons">delete</i></button>
+                        
                       </form>
                     <% } %>
                   </td>

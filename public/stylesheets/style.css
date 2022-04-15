@@ -26,3 +26,7 @@ height: 350px;
 .circularImage{
   border-radius: 50%;
 }
+.deleteBtn{
+  border: none;
+  background-color: white;
+}

@@ -12,7 +12,7 @@
 
 -   Mongoose
 
--Materialize CSS
+-  Materialize CSS
 
 ## User Stories
 
@@ -30,7 +30,7 @@
 
 
 ## Screenshot
-
+    <img src="/images/Home.png">
 
 
 ## Updates
