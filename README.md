@@ -1,6 +1,6 @@
 # PicoMe
 
-PicoMe, A full Stack Crub that allows users to share food with one another. Users can ask for and help others. 
+<!-- PicoMe, A full Stack Crub that allows users to share food with one another. Users can ask for and help others.  -->
 
 ## Tecnologies
 
@@ -31,7 +31,7 @@ PicoMe, A full Stack Crub that allows users to share food with one another. User
 
 ## ERD
 
-####  ![ERD](https://i.ibb.co/TW970sJ/Screen-Shot-2022-04-08-at-10-25-26-AM.png)
+####  ![ERD](https://i.ibb.co/Syj3hw5/pico-Me-ERD.png)
 
 
 
@@ -52,7 +52,7 @@ PicoMe, A full Stack Crub that allows users to share food with one another. User
    
    #### ![Home](https://i.ibb.co/sP3zwbx/Home.png)
 
-   #### ![New Orders](https://i.ibb.co/mSzmVzf/newOrder.png)
+   #### ![New Orders](https://i.ibb.co/pPYKQ6M/Screen-Shot-2022-04-14-at-5-33-14-PM.png)
    
    #### ![Items](https://i.ibb.co/R9L8qS6/items.png)
 
