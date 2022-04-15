@@ -5,9 +5,13 @@
 ## Tecnologies
 
 -Express
+
 -Node Js
+
 -Mongo DB
+
 -Mongoose
+
 -Materialize CSS
 
 ## User Stories
@@ -25,7 +29,7 @@
 ## Wireframe
 
 
-## ScrenShops
+## Screenshot
 
 
 
