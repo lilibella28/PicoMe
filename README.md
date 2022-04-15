@@ -28,6 +28,13 @@ PicoMe, A full Stack Crub that allows users to share food with one another. User
 
 -   As a user, I need to be able to accept food requests.
 
+
+## ERD
+
+####  ![ERD](https://i.ibb.co/TW970sJ/Screen-Shot-2022-04-08-at-10-25-26-AM.png)
+
+
+
 ## Wireframe
    #### ![Home](https://i.ibb.co/WnrYt1M/Screen-Shot-2022-04-15-at-9-30-39-AM.png)
 
