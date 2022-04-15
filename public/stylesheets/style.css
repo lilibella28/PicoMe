@@ -1,18 +1,28 @@
 
 body{
 
-padding: 20px;
+  font-family: 'Inter', sans-serif;
+  margin: 0 auto
 }
+
+
+
+.logoLili{
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.3rem;
+}
+
 
 header{
-
-  height: 300px;
+height: 350px;
 }
 
+.headerFood{
+    color: rgb(55, 68, 51);
+    font-weight: 700;
+}
 
-
-footer {
-  position: relative;
-  top: 300px;
-  right: 120px;
+.circularImage{
+  border-radius: 50%;
 }

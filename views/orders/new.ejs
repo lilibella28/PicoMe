@@ -1,44 +1,118 @@
 <%- include('../partials/header') %>
 
-  
+
 <section class=" container row">
-<div class=" container col s4">
+    <div class=" container col s4">
 
-    <form action="/orders" method="POST">
-     <h3>Delivery details</h3>
-     <div class="input-field">
-     <input type="text" name="address">
-     <label for="street"> Street</label>
-    </div>
-    <div class="input-field"> 
-     <input type="text" name="city">
-     <label for="city">City</label>
+        <form action="/orders" method="POST">
+            <h3>Order details</h3>
+            <div class="input-field">
+                <input type="text" name="address">
+                <label for="street"> Street</label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="city">
+                <label for="city">City</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" name="state">
+                <label for="state">State</label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="zipCode">
+                <label for="zipcode">Zipcode</label>
+            </div>
+            <input type="submit" class="btn" value="continue">
+
+
     </div>
 
-    <div class="input-field">
-        <input type="text" name="state">
-        <label for="state">State</label>
+    <div class=" col s4">
+        <h6>Special Request/Note</h6>
+        <textarea cols="30" rows="10" name="message"></textarea>
     </div>
-    <div class="input-field">
-     <input type="text" name="zipCode">
-     <label for="zipcode">Zipcode</label>
-    </div>
-    <input type="submit" class="btn" >
 
+    <div class=" container col s4 row">
+        <p class="center-align headerFood">Delicious Taste</p>
+        <div  class="center-align">
+        <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+        <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+
+        <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+    </div >
+
+    <div class="center-align">
+        <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+       
+
+        <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+
+        <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+    </div>
+    
   
+    <p class="center-align headerFood">Meat-Free</p>
+    <div  class="center-align">
+    <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+    <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+
+    <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+</div >
+
+<div class="center-align">
+    <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+   
+
+    <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+
+    <img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
 </div>
 
-<div class=" col s4">
-    <h6>Special Request/Note</h6>
-<textarea  cols="30" rows="10"  name="message"></textarea>
+<p class="center-align headerFood">Fun to eat</p>
+<div  class="center-align">
+<img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+<img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+
+<img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+</div >
+
+<div class="center-align">
+<img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+<img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
+
+
+
+<img src="/images/pexels-photo-1092730.jpeg" alt="image" width="100px">
 </div>
+
+
+    </div>
 
 
    
 
 
-</form>
-</div>
+    </form>
+    </div>
 
 </section>
 

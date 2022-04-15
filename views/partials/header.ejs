@@ -7,11 +7,22 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
   <title><%= title %></title>
 </head>
 <body>
-
-    <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="btn">Help center</a>
+   <header>
+     <nav class="#ffffff white">
+    <a href="#" class="brand-logo deep-orange-text logoLili">PicoMe</a>
+     <div class="right-align nav-wrapper">
+    <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="btn">Home</a>
+    <a href="#" class="btn"> Mission</a>
+      <a href="#" class="btn"> Vision</a>
     <% if (user) { %>
    
       <a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="btn">New Order</a>
@@ -19,6 +30,9 @@
     <% } else { %>
       <a href="/auth/google" class="btn" >LOG IN&nbsp;</a>
     <% } %>
-
+  </div>
+</nav>
+<h2 class="center-align logoLili deep-orange-text"><i class=" medium material-icons prefix">favorite</i> One-Stop Shop Help With Veggies Goodies</h2>
+  </header> 
   <main>
-    <h1><%= title %></h1>
+   

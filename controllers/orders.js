@@ -14,19 +14,21 @@ function index(req, res) {
 function show(req, res) {
 	Order.findById(req.params.id, function(err,order ){
 		res.render('orders/show', {
-			title: 'Welcome to Pico',
+			title: 'Welcome to PicoMe',
 			order: order,
 			// groceries: groceries,
 		});
+		res.render('orders/accept')
 	})
 	
 }
 
 function newAdd(req, res) {
-	res.render('orders/new', { title: 'Shopping Cart' });
+	res.render('orders/new', { title: 'Welcome to PicoMe' });
 }
 
 function create(req, res) {
+	req.body.user = req.user._id
 	const order = new Order(req.body);
 	order.save(function (err) {
 		console.log(err, ' this err order');
@@ -36,9 +38,21 @@ function create(req, res) {
 	});
 }
 
+// function finalShow(req, res){
+// 	Order.findById(req.params.id, function(err,order ){
+// 		res.render('orders/accept', {
+// 			title: 'Welcome to PicoMe',
+// 			order: order,
+// 			// groceries: groceries,
+// 		});
+// 	})
+// }
+
 module.exports = {
+	// finalShow,
 	index,
 	show,
 	new: newAdd,
 	create,
+
 };

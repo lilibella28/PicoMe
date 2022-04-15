@@ -3,12 +3,17 @@
 
 
   <section>
-     <div class="container">
+     <div class="container ">
       <% orders.forEach(function(m) { %>
-        <h4> Hi someone from <%= m.city %> send a request  </h4>
+        <div class="card #fafafa grey lighten-5">
+        <span class="card-title"><i class="material-icons prefix  indigo-text">directions_run</i> Hi someone from <i class="material-icons prefix red-text">location_on
+        </i> <%= m.city %> send a request  </span>
         <p>"<%= m.message %>" </p>
-        <a href="/orders/<%= m._id %>" class="btn">DETAILS</a>
-
+        <div class="card-action">
+          <a href="/orders/<%= m._id %>" class="btn">DETAILS</a>
+        </div>
+        
+      </div>
 
         <% }); %>
 

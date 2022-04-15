@@ -1,38 +1,50 @@
 <%- include('../partials/header') %>
 
 
-
     <div class=" row">
       <div class="col s4">
-    <div> UserName: 
-      <%= order.userName %>
-    </div>
-    <div>
-        State:
-      <%= order.state %>
-    </div>
+        <div class="container">
+        <div>
+          <% if (user) { %>
+            <h6>Hi, <%= user.name %>  </h6>
+            <img src="<%= user.avatar %>" alt="avatar" class="circularImage">
+          <% } %> 
+        </div>
+        
     <div>
         City:
       <%= order.city %>
     </div>
-  
     <div>
-        Message:
-        <%= order.message %> </div>
-  
+      State:
+    <%= order.state %>
+  </div>
     <div>
-        Zip Code
-        <%= order.zipCode %> </div>
-        <img src="<%= order.userAvatar %>" alt="avatar">
+      Zip Code
+      <%= order.zipCode %> </div>
+    </div>
+    <br><br>
+    <div class="card z-depth-5 ">
+      <div class="card-content">
 
+        <span class="card-title">Special Request</span> 
+        <p> From <%= order.city %> <%= order.state %> <%= order.zipCode %></p>
+      
+         <%= order.message %>
+        </p>
       </div>
       
       
+      </div>
+  
+    
+        
+      </div>
+      
+     
 
    <div class="col s4">
     <% if (user) { %>
-      <h6>Hi, <%= user.name %>  </h6>
-      <img src="<%= user.avatar %>" alt="avatar">
     <form method="POST" action="/orders/<%=order._id%>/newItem">
       <label>Item Name:</label>
       <input type="text" name="name">
@@ -45,13 +57,16 @@
         <option value="5">5</option>
       </select>
       <input type="submit" value="Add" class="btn">
-  
+      <a href="/orders/" class="btn">Submit</a>
+    </form>
       <% } else { %>
         <p>Are you reading to help?</p>
-        <a href="#" class="btn"> Accept Request </a>
+        <a href="/orders/accept" class="btn"> Accept Request </a>
         <% } %>
       </div>
+ 
 
+      
       <div class="col s4">
         <% if(order.items.length) { %>
           <table id="list" class="container">
@@ -71,8 +86,7 @@
                   <td>
                     <% if (user && user._id.equals(m.user)) { %>
                       <form action="/newItem/<%= m._id %>?_method=DELETE" method="POST">
-                
-                        <button type="submit"><a href=""><i class="material-icons">delete</i></a></button>
+                        <button type="submit"><i class="material-icons">delete</i></button>
                       </form>
                     <% } %>
                   </td>
@@ -85,6 +99,6 @@
         <h4>Please enter a New item</h4>
         <% } %>
       </div>
-
+   
       </div>
 <%- include('../partials/footer') %>
