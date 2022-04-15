@@ -4,13 +4,13 @@
 
 ## Tecnologies
 
--Express
+-   Express
 
--Node Js
+-   Node Js
 
--Mongo DB
+-   Mongo DB
 
--Mongoose
+-   Mongoose
 
 -Materialize CSS
 
