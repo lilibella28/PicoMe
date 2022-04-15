@@ -1,6 +1,6 @@
 # PicoMe
 
-
+PicoMe, available on web and mobile, is a service that allows users to share food with one another. Users can ask for and help others. 
 
 ## Tecnologies
 
@@ -27,10 +27,10 @@
 -   As a user, I need to be able to accept food requests.
 
 ## Wireframe
-
+ #### ![Home]("https://i.ibb.co/WnrYt1M/Screen-Shot-2022-04-15-at-9-30-39-AM.png" alt="Screen-Shot-2022-04-15-at-9-30-39-AM")
 
 ## Screenshot
-    <img src="/public/images/Home.png">
+    
 
 
 ## Updates
