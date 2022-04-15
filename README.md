@@ -12,6 +12,8 @@ PicoMe, A full Stack Crub that allows users to share food with one another. User
 
 -   Mongoose
 
+-   JavaScript
+
 -  Materialize CSS
 
 ## User Stories
@@ -33,11 +35,19 @@ PicoMe, A full Stack Crub that allows users to share food with one another. User
    
    #### ![Items](https://i.ibb.co/6sjz8gZ/Screen-Shot-2022-04-15-at-9-31-05-AM.png)
 
-   #### [Final](https://i.ibb.co/RN1bR3N/Screen-Shot-2022-04-15-at-9-55-28-AM.png)
+   #### ![Final](https://i.ibb.co/RN1bR3N/Screen-Shot-2022-04-15-at-9-55-28-AM.png)
+
+  
 
 
 ## Screenshot
-    
 
+   
+   #### ![Home](https://i.ibb.co/sP3zwbx/Home.png)
 
-## Updates
+   #### ![New Orders](https://i.ibb.co/mSzmVzf/newOrder.png)
+   
+   #### ![Items](https://i.ibb.co/R9L8qS6/items.png)
+
+   #### ![Final](https://i.ibb.co/L0ydkc1/final.png)
+
