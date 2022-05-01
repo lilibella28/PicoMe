@@ -1,34 +1,19 @@
 const Order = require('../models/orders');
 
-
-
-function deleteItem(req, res, next){
-	
-	Order.findOne({'items._id': req.params.id}, function(err, itemDocument){
-		
+function deleteItem(req, res, next) {
+	Order.findOne({ 'items._id': req.params.id }, function (err, itemDocument) {
 		const item = itemDocument.items.id(req.params.id);
-		
-		if(!item.user.equals(req.user._id)) return res.redirect(`/orders/${itemDocument._id}`);
 
-		
-		// 1 way find the review then call remove method
-		item.remove()
-		
-		
-		itemDocument.save(function(err){
-			if(err) next(err); // next(err) passes it to the express generator err handler
-			res.redirect(`/orders/${itemDocument._id}`)
-		})
+		if (!item.user.equals(req.user._id)) return res.redirect(`/orders/${itemDocument._id}`);
 
+		item.remove();
 
-	})
-
-
-
+		itemDocument.save(function (err) {
+			if (err) next(err);
+			res.redirect(`/orders/${itemDocument._id}`);
+		});
+	});
 }
-
-
-
 
 function create(req, res) {
 	Order.findById(req.params.id, function (err, orderDatabase) {
@@ -42,8 +27,6 @@ function create(req, res) {
 		});
 	});
 }
-
-
 
 module.exports = {
 	create,

@@ -18,7 +18,7 @@ function show(req, res) {
 			order: order,
 			// groceries: groceries,
 		});
-		res.render('orders/accept')
+		
 	})
 	
 }
@@ -38,15 +38,6 @@ function create(req, res) {
 	});
 }
 
-// function finalShow(req, res){
-// 	Order.findById(req.params.id, function(err,order ){
-// 		res.render('orders/accept', {
-// 			title: 'Welcome to PicoMe',
-// 			order: order,
-// 			// groceries: groceries,
-// 		});
-// 	})
-// }
 
 module.exports = {
 	// finalShow,
