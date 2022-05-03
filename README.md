@@ -1,7 +1,7 @@
 # PicoMe
 
 <!-- PicoMe, A full Stack Crub that allows users to share food with one another. Users can ask for and help others.  -->
-
+PicoMe is a browser-based application that utilizes mongoose to allow users to perform CRUD operations on a MongoDB database. PicoMe mission is to create a platform that allows users to share or request food assistance from the community without cost.
 ## Tecnologies
 
 -   Express
