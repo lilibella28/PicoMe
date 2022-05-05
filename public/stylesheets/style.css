@@ -29,9 +29,21 @@ body{
   background-color: white;
 }
 
+.navbar-fixed {
+  z-index: 999;
+}
+.btn {
+  background-color: #4ead54 !important;
+}
 
 
+@media only screen and (max-width: 860px) {
 
+  .row .col.s4 {
+    width: 100% !important;
+    padding-top: 50px !important;
+  }
+}
 /* @media screen and (max-width: 390px){
   
   #picome{
