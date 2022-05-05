@@ -13,26 +13,46 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title><%= title %></title>
 </head>
 <body>
    <header>
-     <nav class="#ffffff white">
+    <nav class="#ffffff white">
+      <div class="nav-wrapper">
     <a href="#" class="brand-logo deep-orange-text logoLili">PicoMe</a>
-     <div class="right-align nav-wrapper"  >
-    <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="btn">Home</a>
-    <a href="#" class="btn"> Mission</a>
-      <a href="#" class="btn"> Vision</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger m12" ><i class="material-icons orange-text">menu</i></a>
+  <ul class="right hide-on-med-and-down"  >
+   <li> <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="green-text darken-4-text">Home</a></li>
+    <li><a href="#"  class="green-text darken-4-text"> Mission</a></li>
+     <li><a href="#" class="green-text darken-4-text" > Vision</a></li>
     <% if (user) { %>
    
-      <a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="btn">New Order</a>
-      <a href="/logout" class="btn">LOG OUT</a>
+    <li><a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="green-text darken-4-text">New Order</a></li>
+      <li><a href="/logout" class="green-text darken-4-text" >LOG OUT</a></li>
     <% } else { %>
-      <a href="/auth/google" class="btn" >LOG IN&nbsp;</a>
+     <li><a href="/auth/google" class="green-text darken-4-text"  >LOG IN&nbsp;</a></li>
     <% } %>
-  </div>
+  </ul>
+</div>
 </nav>
+<ul class="sidenav" id="mobile-demo" >
+  <li> <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="green-text darken-4-text">Home</a></li>
+   <li><a href="#" class="green-text darken-4-text"> Mission</a></li>
+    <li><a href="#" class="green-text darken-4-text"> Vision</a></li>
+   <% if (user) { %>
+  
+   <li><a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="green-text darken-4-text">New Order</a></li>
+     <li><a href="/logout" class="green-text darken-4-text">LOG OUT</a></li>
+   <% } else { %>
+    <li><a href="/auth/google" class="green-text darken-4-text">LOG IN&nbsp;</a></li>
+   <% } %>
+ </ul>
 <h2 class="center-align logoLili deep-orange-text"><i class=" medium material-icons prefix">favorite</i> One-Stop Shop Help With Veggies Goodies</h2>
   </header> 
   <main>
-   
+   <script>
+   $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+   </script>

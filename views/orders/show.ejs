@@ -48,7 +48,7 @@
     <% if (user && user._id.equals(order.user._id)) { %>
     <form method="POST" action="/orders/<%=order._id%>/newItem">
       <label>Item Name:</label>
-      <input type="text" name="name">
+      <input type="text" name="name" required>
       <label>Amount:</label>
       <select name="amount">
         <option value="1">1</option>
@@ -58,11 +58,11 @@
         <option value="5">5</option>
       </select>
       <input type="submit" value="Add" class="btn">
-      <a href="/orders/" class="btn">Submit</a>
+      <input type="submit" href="/orders/" class="btn" value="Submit" >
     </form>
       <% } else { %>
         <p>Are you reading to help?</p>
-        <a href="/orders/" class="btn"> Accept Request </a>
+        <a href="/js/index.html" class="btn"> Accept Request </a>
         <% } %>
       </div>
  
