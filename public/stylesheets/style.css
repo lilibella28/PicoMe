@@ -35,8 +35,16 @@ body{
 .btn {
   background-color: #4ead54 !important;
 }
-
-
+img.aboutPicture{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;
+   width: 600px;
+ }
+ div.card-panel.abouts{
+  margin-top: 60px
+}
 @media only screen and (max-width: 860px) {
 
   .row .col.s4 {
@@ -45,8 +53,14 @@ body{
   }
 
   img.aboutPicture{
-   margin: 0px 40px;
     width: 300px;
+  }
+  div.card-panel.abouts{
+    margin-top: 30px !important;
+  }
+  span.card-title.sabout{
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 /* @media screen and (max-width: 390px){
