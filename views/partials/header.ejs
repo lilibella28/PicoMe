@@ -23,9 +23,9 @@
     <a href="#" class="brand-logo deep-orange-text logoLili">PicoMe</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger m12" ><i class="material-icons orange-text">menu</i></a>
   <ul class="right hide-on-med-and-down"  >
-   <li> <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="green-text darken-4-text">Home</a></li>
-    <li><a href="#"  class="green-text darken-4-text"> Mission</a></li>
-     <li><a href="#" class="green-text darken-4-text" > Vision</a></li>
+  <li> <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="green-text darken-4-text">Home</a></li>
+    <li><a href="/about"  class="green-text darken-4-text"> About Us</a></li>
+    
     <% if (user) { %>
    
     <li><a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="green-text darken-4-text">New Order</a></li>
@@ -38,8 +38,8 @@
 </nav>
 <ul class="sidenav" id="mobile-demo" >
   <li> <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="green-text darken-4-text">Home</a></li>
-   <li><a href="#" class="green-text darken-4-text"> Mission</a></li>
-    <li><a href="#" class="green-text darken-4-text"> Vision</a></li>
+   <li><a href="/about" class="green-text darken-4-text"> About Us</a></li>
+
    <% if (user) { %>
   
    <li><a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="green-text darken-4-text">New Order</a></li>

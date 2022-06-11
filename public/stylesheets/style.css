@@ -43,6 +43,11 @@ body{
     width: 100% !important;
     padding-top: 50px !important;
   }
+
+  img.aboutPicture{
+   margin: 0px 40px;
+    width: 300px;
+  }
 }
 /* @media screen and (max-width: 390px){
   

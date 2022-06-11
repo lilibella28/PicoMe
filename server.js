@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
 const ordersRouter = require('./routes/orders')
 const newItemsRouters = require("./routes/newItem")
+const aboutRouter = require('./routes/aboutus')
 // load the env consts
 require('dotenv').config();
 
@@ -54,6 +55,7 @@ app.use(function (req, res, next) {
 app.use('/', indexRoutes);
 app.use('/orders', ordersRouter)
 app.use('/', newItemsRouters);
+app.use('/', aboutRouter);
 // app.use('/', groceryRouter)
 
 
