@@ -1,4 +1,4 @@
-
+const Contacts = require("../models/contact")
 
 
 function about(req, res){
@@ -11,6 +11,22 @@ function about(req, res){
      
 }
 
+// A function to allow the user to send their contact information
+//  firstName: String,
+// lastName: String,
+// city: String,
+// state: String,
+// zipCode: Number,
+// message: String
+function create(req, res){
+    const contact = new Contacts(req.body);
+    contact.save(function(err){
+         if(err) return res.redirect('/contact')
+         res.redirect('/orders')
+    })
+}
+
 module.exports = {
-	about
+     about,
+     create
 };
