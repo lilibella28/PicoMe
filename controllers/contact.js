@@ -20,6 +20,7 @@ const sendContact = (email, name) =>  {
 
 }
 
+
 module.exports = {
     sendContact
 }
