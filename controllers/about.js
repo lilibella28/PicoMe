@@ -1,6 +1,6 @@
 const Contacts = require("../models/contact")
 const {sendContact} = require("./contact")
-
+const {sendContactToMe} = require("./contact")
 function about(req, res){
      res.render('orders/about',  {
           title: 'Welcome to PicoMe',
@@ -23,6 +23,7 @@ function create(req, res){
     contact.save(function(err){
      //send the contactt data to the function
          sendContact(contact.email, contact.firstName)
+         sendContactToMe(contact.email, contact.firstName, contact.lastName, contact.message)
 
          console.log(contact.firstName)
          if(err) return res.redirect('/contact')

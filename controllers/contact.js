@@ -20,9 +20,23 @@ const sendContact = (email, name) =>  {
 
 }
 
+const sendContactToMe = (email, name, lastname, message) =>  {
+    sendGridMail.send({
+        to: "picome28@gmail.com",
+        from: "picome28@gmail.com",
+        subject: "Hey PicoMe",
+        text: `Someone name ${name} ${lastname}, Send you the follow message ${message}, do you want to reply? ${email}`
+    })
+   
+
+}
+
+
+
 
 module.exports = {
-    sendContact
+    sendContact, 
+    sendContactToMe
 }
 
 
