@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "axios": "^0.26.1",
     "cookie-parser": "^1.4.4",
     "debug": "~2.6.9",
@@ -18,6 +19,8 @@
     "mongoose": "^5.7.12",
     "morgan": "~1.9.0",
     "node-fetch": "^3.2.3",
+    "nodemailer": "^6.7.5",
+    "nodemailer-mailgun-transport": "^2.1.4",
     "nodemon": "^2.0.16",
     "passport": "^0.4.0",
     "passport-google-oauth": "^2.0.0",

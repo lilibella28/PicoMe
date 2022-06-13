@@ -1,5 +1,5 @@
 const Contacts = require("../models/contact")
-
+const {sendContact} = require("./contact")
 
 function about(req, res){
      res.render('orders/about',  {
@@ -21,6 +21,10 @@ function about(req, res){
 function create(req, res){
     const contact = new Contacts(req.body);
     contact.save(function(err){
+     //send the contactt data to the function
+         sendContact(contact.email, contact.firstName)
+
+         console.log(contact.firstName)
          if(err) return res.redirect('/contact')
          res.redirect('/orders')
     })
