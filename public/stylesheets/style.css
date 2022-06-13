@@ -54,6 +54,10 @@ h3.green-text.darken-4-text{
   font-weight: 600;
 }
 @media only screen and (max-width: 860px) {
+  
+  .logoLili{
+    font-size: 15px ;
+  }
 
   .row .col.s4 {
     width: 100% !important;
