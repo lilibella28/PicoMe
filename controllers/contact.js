@@ -8,7 +8,7 @@ const sendGridMail = require("@sendgrid/mail");
 sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
-
+// I am here to send the user an email once they submit the cita forn
 const sendContact = (email, name) =>  {
     sendGridMail.send({
         to: email,
@@ -19,6 +19,8 @@ const sendContact = (email, name) =>  {
    
 
 }
+
+//  I am here tto send an email every time a new contact form is submit.
 
 const sendContactToMe = (email, name, lastname, message) =>  {
     sendGridMail.send({
