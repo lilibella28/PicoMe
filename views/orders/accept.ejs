@@ -1,4 +1,26 @@
 <%- include('../partials/header') %>
 
-<h1>Thank you for accepting</h1>
+<h1 class="green-text darken-4-text">Thank you for accepting the request</h1>
+
+
+<section class=" container row">
+    <div class=" container col">
+<h3>Please review the request</h3>
+        <form action="/accept" method="POST">
+            <div class="input-field">
+                <input type="text" name="contact">
+                <label for="contact">Contact Info</label>
+            </div>
+            <div>
+                <label for="message"> Note</label>
+                <textarea cols="30" rows="10" name="message"></textarea>
+               
+            </div>
+            <input type="submit" class="btn" value="Submit">
+
+
+    </div>
+
+    
+</section>
 <%- include('../partials/footer') %>

@@ -10,6 +10,7 @@ const indexRoutes = require('./routes/index');
 const ordersRouter = require('./routes/orders')
 const newItemsRouters = require("./routes/newItem")
 const aboutRouter = require('./routes/aboutus')
+const acceptRoutes = require('./routes/accept')
 // load the env consts
 require('dotenv').config();
 
@@ -56,6 +57,7 @@ app.use('/', indexRoutes);
 app.use('/orders', ordersRouter)
 app.use('/', newItemsRouters);
 app.use('/', aboutRouter);
+app.use("/", acceptRoutes)
 // app.use('/', groceryRouter)
 
 
