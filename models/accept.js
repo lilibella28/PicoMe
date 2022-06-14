@@ -9,4 +9,4 @@ acceptSchema = new Schema({
 
 })
 
-module.exports = moongose.models('Accept', acceptSchema)
+module.exports = mongoose.model("Accept", acceptSchema);
