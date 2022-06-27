@@ -20,16 +20,15 @@
    <header>
     <nav class="#ffffff white">
       <div class="nav-wrapper">
-    <a href="#" class="brand-logo deep-orange-text logoLili">PicoMe</a>
+    <a href="/orders" class="brand-logo deep-orange-text logoLili">PicoMe</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger m12" ><i class="material-icons orange-text">menu</i></a>
   <ul class="right hide-on-med-and-down"  >
   <li> <a href="/orders" <%- title === 'All request' ? 'class="active"' : '' %> class="green-text darken-4-text">Home</a></li>
     <li><a href="/about"  class="green-text darken-4-text"> About Us</a></li>
-    
     <% if (user) { %>
    
     <li><a href="/orders/new" <%- title === 'new order' ? 'class="active"' : '' %> class="green-text darken-4-text">New Order</a></li>
-      <li><a href="/logout" class="green-text darken-4-text" >LOG OUT.</a></li>
+      <li><a href="/logout" class="green-text darken-4-text" >LOG OUT</a></li>
     <% } else { %>
      <li><a href="/auth/google" class="green-text darken-4-text"  >LOG IN&nbsp;</a></li>
     <% } %>
