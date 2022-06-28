@@ -57,7 +57,11 @@
     </form>
       <% } else { %>
         <p>Are you reading to help?.</p>
-        <a href="/orders/<%= order._id %> /accept" class="btn"> Accept Request </a>
+          <% if(user){%>
+            <a href="/orders/<%= order._id %> /accept" class="btn"> Accept Request</a>
+            <% } else { %>
+              <a href="#" class="btn"> Accept Request</a>
+            <% } %>
         <% } %>
       </div>
  
