@@ -8,22 +8,23 @@
           <% if (user) { %>
             <h6>Hi, <%= user.name %>  </h6>
             <img src="<%= user.avatar %>" alt="avatar" class="circularImage">
+            <div id="introductionDiv">
+              Lorem ipsum, dolor sit amet consectetur
+               adipisicing elit. Vitae, alias odit incidunt delectus
+                perspiciatis totam dolorum. Qui, asperiores fuga. Dolorum, officiis iste? Dolorem, cum corporis. Omnis quo ab sint neque.
+           </div>
+           <div>
+             State:
+           <%= order.state %>
+         </div>
+           <div>
+             Zip Code
+             <%= order.zipCode %> </div>
+           </div>
           <% } %> 
         </div>
         
-    <div id="introductionDiv">
-       Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Vitae, alias odit incidunt delectus
-         perspiciatis totam dolorum. Qui, asperiores fuga. Dolorum, officiis iste? Dolorem, cum corporis. Omnis quo ab sint neque.
-    </div>
-    <div>
-      State:
-    <%= order.state %>
-  </div>
-    <div>
-      Zip Code
-      <%= order.zipCode %> </div>
-    </div>
+ 
     <br><br>
     <div class="card z-depth-5 ">
       <div class="card-content">
