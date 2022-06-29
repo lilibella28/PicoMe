@@ -6,7 +6,7 @@ function index(req, res) {
 	Order.find({}, function (err, orders) {
 		res.render('orders/index', {
 			orders,
-			title: 'Help center',
+			title: 'Welcome to PicoMe',
 		});
 	});
 }

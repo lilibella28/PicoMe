@@ -1,26 +1,45 @@
 <%- include('../partials/header') %>
 
-<h1 class="green-text darken-4-text">Thank you for accepting the request</h1>
+
 
 
 <section class=" container row">
     <div class=" container col">
-<h3>Please review the request</h3>
-        <form action="/orders/accept"  %> " method="POST">
+<h5 class="green-text darken-4-text">Thank you for accepting the request</h5>      
+<p>Review the order's details, and when you are ready, click the submit buttom. </p>
+        <form  method="POST" action="/orders/accept">
             <div class="input-field">
-                <input type="text" name="contact">
-                <label for="contact">Contact Info</label>
+                <input type="text" name="name">
+                <label for="name">Name</label>
             </div>
-            <div>
-                <label for="message"> Note</label>
+            <div class="input-field">
+                <input type="email" name="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="state">
+                <label for="state">State</label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="city">
+                <label for="city">City</label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="zipcode">
+                <label for="zipcode">Zip Code</label>
+            </div>
+        
+            <div class="input-field">
+                <label for="message"> Note/Instructions</label>
+                <br><br>
                 <textarea cols="30" rows="10" name="message"></textarea>
                
             </div>
             <input type="submit" class="btn" value="Submit">
-
+       
 
     </div>
-
+</form>
     
 </section>
 <%- include('../partials/footer') %>
