@@ -1,116 +1,131 @@
-
-body{
-
-  font-family: 'Inter', sans-serif;
-  margin: 0 auto
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0 auto;
 }
 
-
-
-.logoLili{
-  font-size: 30px;
-  font-family: 'Anton', sans-serif;
-  letter-spacing: 0.3rem;
+.logoLili {
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0.3rem;
 }
 
-
-
-
-.headerFood{
-    color: rgb(55, 68, 51);
-    font-weight: 700;
+.headerFood {
+	color: rgb(55, 68, 51);
+	font-weight: 700;
 }
 
-.circularImage{
-  border-radius: 50%;
+.circularImage {
+	border-radius: 50%;
 }
-.deleteBtn{
-  border: none;
-  background-color: white;
+
+.deleteBtn {
+	border: none;
+	background-color: white;
 }
 
 .navbar-fixed {
-  z-index: 999;
+	z-index: 999;
 }
+
 .btn {
-  background-color: #4ead54 !important;
+	background-color: #4ead54 !important;
 }
-img.aboutPicture{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: 5px;
-   width: 600px;
- }
- div.card-panel.abouts{
-  margin-top: 60px
+
+img.aboutPicture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	width: 600px;
 }
-span.card-title.sabout{
-  font-size: 30px;
-  font-weight: 600;
+
+div.card-panel.abouts {
+	margin-top: 60px;
 }
-h3.green-text.darken-4-text{
-  font-size: 30px;
-  font-weight: 600;
+
+span.card-title.sabout {
+	font-size: 30px;
+	font-weight: 600;
 }
-blockquote{
-  border-left: 5px solid #4ead54 !important;
+
+h3.green-text.darken-4-text {
+	font-size: 30px;
+	font-weight: 600;
 }
+
+blockquote {
+	border-left: 5px solid #4ead54 !important;
+}
+
 .row .col.s4 {
-  width: 100% !important;
-  padding-top: 50px !important;
-}
-.input-field input[type=text]:focus + label {
-  color: #000 !important;
-}
-.input-field input[type=email]:focus + label {
-color: #000 !important;
+	width: 100% !important;
+	padding-top: 50px !important;
 }
 
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #000 !important;
-  box-shadow: 0 1px 0 0 #000 !important;
+.input-field input[type='text']:focus + label {
+	color: #000 !important;
 }
-.input-field input[type=email]:focus {
-  border-bottom: 1px solid #000 !important;
-  box-shadow: 0 1px 0 0 #000 !important;
+
+.input-field input[type='email']:focus + label {
+	color: #000 !important;
 }
-#hiddenme{
-  color: red;
-  display: none;
+
+.input-field input[type='text']:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
 }
-.displayme{
-   display: block !important;
+
+.input-field input[type='email']:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
 }
+
+#hiddenme {
+	color: red;
+	display: none;
+}
+
+.displayme {
+	display: block !important;
+}
+
+.card-panel {
+	border-radius: 8px !important;
+	cursor: pointer;
+}
+.card-panel:hover{
+  box-shadow: 5px 5px 5px 5px rgba(144, 146, 148, 0.5);
+}
+
 @media only screen and (max-width: 860px) {
-  
-  .logoLili{
-    font-size: 15px ;
-  }
+	.logoLili {
+		font-size: 15px;
+	}
 
-  .row .col.s4 {
-    width: 100% !important;
-    padding-top: 50px !important;
-  }
+	.row .col.s4 {
+		width: 100% !important;
+		padding-top: 50px !important;
+	}
 
-  img.aboutPicture{
-    width: 300px;
-  }
-  div.card-panel.abouts{
-    margin-top: 30px !important;
-  }
-  span.card-title.sabout{
-    font-size: 20px;
-    font-weight: 500;
-  }
-  h3.green-text.darken-4-text{
-    font-size: 20px;
-    font-weight: 500;
-  }
+	img.aboutPicture {
+		width: 300px;
+	}
 
+	div.card-panel.abouts {
+		margin-top: 30px !important;
+	}
 
- 
+	span.card-title.sabout {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	h3.green-text.darken-4-text {
+		font-size: 20px;
+		font-weight: 500;
+	}
 }
+
 /* @media screen and (max-width: 390px){
   
   #picome{
