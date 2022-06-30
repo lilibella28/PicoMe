@@ -60,7 +60,8 @@
           <% if(user){%>
             <a href="/orders/<%= order._id %> /accept" class="btn"> Accept Request</a>
             <% } else { %>
-              <a href="#" class="btn"> Accept Request</a>
+              <a href="#" id="myButton" class="btn"> Accept Request</a>
+              <p id="hiddenme">Please  Sign up or Log In to accept the request.</p>
             <% } %>
         <% } %>
       </div>
@@ -102,4 +103,11 @@
       </div>
    
       </div>
+      <script>
+      const button = document.getElementById("myButton");
+       button.addEventListener('click', function(e) {
+            const p = document.getElementById('hiddenme')
+                  p.setAttribute('class', "displayme")
+});
+      </script>
 <%- include('../partials/footer') %>
