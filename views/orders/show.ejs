@@ -75,7 +75,7 @@
               <tr>
                 <th> item Name</th>
                 <th>Amount</th>
-                <th>Delete</th>
+               
               </tr>
             </thead>
             <tbody>
@@ -84,8 +84,10 @@
                   <td><%= m.name %></td>
                   <td><%= m.amount %></td>
 
-                  <td>
+                  
                     <% if (user && user._id.equals(m.user)) { %>
+    
+                      <td>
                       <form action="/newItem/<%= m._id %>?_method=DELETE" method="POST">
                         <button type="submit" class="deleteBtn red-text"><i class="material-icons">delete</i></button>
                         

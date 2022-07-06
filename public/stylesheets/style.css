@@ -6,13 +6,15 @@ body {
 .logoLili {
 	font-size: 30px;
 	font-family: 'Anton', sans-serif;
-	letter-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
 }
 
 .headerFood {
 	color: rgb(55, 68, 51);
 	font-weight: 700;
 }
+
+
 
 .circularImage {
 	border-radius: 50%;
