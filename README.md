@@ -1,32 +1,40 @@
 # PicoMe
 
-<!-- PicoMe, A full Stack Crub that allows users to share food with one another. Users can ask for and help others.  -->
-PicoMe is a browser-based application that utilizes mongoose to allow users to perform CRUD operations on a MongoDB database. PicoMe mission is to create a platform that allows users to share or request food assistance from the community without cost.
-## Tecnologies
+PicoMe is a browser-based application that allows users to share or request food assistance from the community without cost. It utilizes MongoDB for CRUD operations and is built using Express, Node.js, and JavaScript, with Materialize CSS for styling.
 
--   Express
+## Installation
 
--   Node Js
+To run PicoMe locally, follow these steps:
 
--   Mongo DB
+1. Clone the repository: `git clone https://github.com/yourusername/picome.git`
+2. Install dependencies: `npm install`
+3. Set up environment variables as described in `.env.example`
+4. Start the application: `npm start`
 
--   Mongoose
+## Usage
 
--   JavaScript
+1. Log in using your Google account.
+2. Add grocery items to your request basket.
+3. Delete grocery items from your request basket.
+4. Visit the homepage to see a list of all users' requests.
+5. Accept food requests from other users.
 
--  Materialize CSS
+## Technologies
+
+- Express
+- Node.js
+- MongoDB
+- Mongoose
+- JavaScript
+- Materialize CSS
 
 ## User Stories
 
--   As a user, I want to be able to log in using a Google account.
-
--   As a user, I want to be able to add grocery items to my request basket.
-
--   As a user, I want to be able to delete grocery items from my request basket.
-
--   As a user, I want to go to the homepage and see a list of all the users' requests.
-
--   As a user, I need to be able to accept food requests.
+- [ ] As a user, I want to be able to log in using a Google account.
+- [ ] As a user, I want to be able to add grocery items to my request basket.
+- [ ] As a user, I want to be able to delete grocery items from my request basket.
+- [ ] As a user, I want to go to the homepage and see a list of all the users' requests.
+- [ ] As a user, I need to be able to accept food requests.
 
 
 ## ERD
