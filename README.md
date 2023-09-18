@@ -6,7 +6,7 @@ PicoMe is a browser-based application that allows users to share or request food
 
 To run PicoMe locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/picome.git`
+1. Clone the repository: `git clone https://git@github.com:lilibella28/PicoMe.git`
 2. Install dependencies: `npm install`
 3. Set up environment variables as described in `.env.example`
 4. Start the application: `npm start`
